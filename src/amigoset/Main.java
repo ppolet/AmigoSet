@@ -44,6 +44,7 @@ public class Main {
         }
         
         // DeSerialized
+        System.out.println("--- Deserialized ---");
         AmigoSet<Integer> aDeser = new AmigoSet<>();
         try {
             FileInputStream fis = new FileInputStream(FILE_PATH);
@@ -58,7 +59,6 @@ public class Main {
             System.out.println("Exception at deserialized (ClassNotFoundException): " + ex);
         }
         
-        System.out.println("--- Deserialized ---");
         System.out.println("Deserialized AmigoSet aDeser: " + aDeser + " size: " + aDeser.size());
     }
 }
